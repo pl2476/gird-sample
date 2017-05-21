@@ -5,9 +5,9 @@
   <title>Multiline cells</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="/codebase/fonts/font_roboto/roboto.css" />
-  <link rel="stylesheet" type="text/css" href="/codebase/dhtmlx.css" />
-  <script src="/codebase/dhtmlx.js"></script>
+  <link rel="stylesheet" type="text/css" href="codebase/fonts/font_roboto/roboto.css" />
+  <link rel="stylesheet" type="text/css" href="codebase/dhtmlx.css" />
+  <script src="codebase/dhtmlx.js"></script>
   <style>
     .not_m_line {
       white-space: nowrap;
@@ -37,7 +37,7 @@
       myGrid.enableMultiline(true);
       myGrid.enableAutoWidth(true);
       myGrid.init();
-      myGrid.load("./common/data.json", function () {
+      myGrid.load("common/data.json", function () {
         myGrid.forEachRow(function (id) {
           myGrid.cells(id, 2).cell.className = 'not_m_line';
         })
